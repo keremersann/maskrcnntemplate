@@ -9,7 +9,7 @@ from mrcnn.visualize import display_instances
 import matplotlib.pyplot as plt
 
 # Root directory of the project
-ROOT_DIR = "D:\Mask Projects\car_truck\Mask_RCNN"
+ROOT_DIR = "D:\\Mask Projects\\test\\Mask_RCNN"
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
@@ -153,12 +153,12 @@ def train(model):
     """Train the model."""
     # Training dataset.
     dataset_train = CustomDataset()
-    dataset_train.load_custom("D:\\Mask Projects\\car_truck\\Mask_RCNN\\Dataset", "train")
+    dataset_train.load_custom("D:\\Mask Projects\\test\\Mask_RCNN\\Dataset", "train")
     dataset_train.prepare()
 
     # Validation dataset
     dataset_val = CustomDataset()
-    dataset_val.load_custom("D:\\Mask Projects\\car_truck\\Mask_RCNN\\Dataset", "val")
+    dataset_val.load_custom("D:\\Mask Projects\\test\\Mask_RCNN\\Dataset", "val")
     dataset_val.prepare()
 
     # *** This training schedule is an example. Update to your needs ***
