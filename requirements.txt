@@ -3,6 +3,8 @@ scipy
 Pillow
 cython
 matplotlib
+tensorflow==1.14.0
+keras==2.0.8
 scikit-image
 opencv-python
 h5py
