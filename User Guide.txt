@@ -1,0 +1,27 @@
+NOT: Install python 3.6.8, then install tensorflow 1.15 , keras 2.2.4, h5py 2.10.0
+
+1) enter the folder
+2) conda create -n mask_car_truck python=3.6.12
+3) conda activate mask_car_truck
+4) git clone https://github.com/keremersann/maskrcnntemplate.git
+5) pip install -r requirements.txt
+6) download pre-trained COCO weights 'mask_rcnn_coco.h5' put it to working directory
+7) pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+--------------------------------------------------------------------------------------
+Setup the dataset
+1) Create folder called 'Dataset'
+2) create 'train' and 'val' folders inside 'Dataset' folder
+3) put images and annotations of these images respectively.
+4) Adjust custom.py file according to your dataset
+----------------------------------------------------------
+Train model
+1) execute 'python custom.py' command
+2) logs will be written in to the logs folder after evey epoch
+3) Once training is done, select final epoch's h5 file to test
+----------------------------------------------------------
+Test model
+1) open test_model.ipynb in jupyter notebook by executing 'jupyter notebook' command
+NOT: you should activate the environment, if you get an error
+
+2) Adjust the code according to your dataset.
+3) Run the code.
